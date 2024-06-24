@@ -1,0 +1,26 @@
+{
+  "name": "cgt-theme",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A CSS and JS Library for the Cogitanda Apps",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vite",
+    "build:js": "tsc && pnpm vite build",
+    "build:css": "postcss src/index.css -o dist/index.css",
+    "build": "pnpm build:js && pnpm build:css",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.3",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^9.5.14",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-banner": "^0.7.1"
+  }
+}
